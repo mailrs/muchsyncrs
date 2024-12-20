@@ -1,0 +1,9 @@
+[package]
+name = "muchsyncrs"
+version = "0.0.0"
+edition = "2021"
+
+license = "MPL-2.0"
+description = "synchronize notmuch databases"
+
+[dependencies]
