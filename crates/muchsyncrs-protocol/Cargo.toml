@@ -1,0 +1,23 @@
+[package]
+name = "muchsyncrs-protocol"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dashmap.workspace = true
+derive_more = { version = "1", features = ["from", "try_from", "try_into"] }
+futures.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+thiserror.workspace = true
+time = { workspace = true, features = ["serde"] }
+tokio = { workspace = true, features = ["fs", "io-util", "macros", "rt", "sync"] }
+tokio-util = { workspace = true, features = ["codec"] }
+tower = { workspace = true, features = ["make", "util"] }
+tower-service.workspace = true
+tracing.workspace = true
+uuid = { workspace = true, features = ["serde"] }
+
+[dev-dependencies]
+insta = "1.41.0"
+tokio = { workspace = true, features = ["rt-multi-thread", "macros"] }

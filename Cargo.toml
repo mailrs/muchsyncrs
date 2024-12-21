@@ -1,23 +1,33 @@
-[package]
-name = "muchsyncrs"
+[workspace]
+resolver = "2"
+members = [ "crates/*" ]
+
+
+[workspace.package]
 version = "0.0.0"
 edition = "2021"
 
 license = "MPL-2.0"
 description = "synchronize notmuch databases"
 
-[dependencies]
-camino = { version = "1.1.9", features = ["serde1"] }
-clap = { version = "4.5.23", features = ["color", "derive", "suggestions", "wrap_help"] }
-clap-verbosity-flag = { version = "3.0.2", default-features = false, features = ["tracing"] }
+[workspace.dependencies]
+camino = "1.1.9"
+clap = "4.5.23"
+clap-verbosity-flag = "3.0.2"
+dashmap = "6.1"
 futures = "0.3.31"
 human-panic = "2.0.2"
-miette = { version = "7.4.0", features = ["fancy"] }
-serde = { version = "1.0.216", features = ["derive"] }
+miette = "7.4.0"
+serde = "1.0.216"
+serde_json = "1"
 thiserror = "2.0.8"
-tokio = { version = "1.42.0", features = ["macros", "rt", "io-util", "fs", "sync"] }
+time = "0.3.34"
+tokio = "1.42.0"
 tokio-util = "0.7.13"
 toml = "0.8.19"
+tower = "0.5.1"
+tower-service = "0.3.3"
 tracing = "0.1.41"
-tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+tracing-subscriber = "0.3.19"
+uuid = "1.11"
 xdg = "2.5.2"
