@@ -12,7 +12,7 @@ clap = { version = "4.5.27", features = ["color", "derive", "suggestions", "wrap
 clap-verbosity-flag = { version = "3.0.2", default-features = false, features = ["tracing"] }
 futures = "0.3.31"
 human-panic = "2.0.2"
-miette = { version = "7.4.0", features = ["fancy"] }
+miette = { version = "7.5.0", features = ["fancy"] }
 serde = { version = "1.0.217", features = ["derive"] }
 thiserror = "2.0.9"
 tokio = { version = "1.43.0", features = ["macros", "rt", "io-util", "fs", "sync"] }
