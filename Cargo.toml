@@ -7,7 +7,7 @@ license = "MPL-2.0"
 description = "synchronize notmuch databases"
 
 [dependencies]
-camino = { version = "1.1.9", features = ["serde1"] }
+camino = { version = "1.1.10", features = ["serde1"] }
 clap = { version = "4.5.39", features = ["color", "derive", "suggestions", "wrap_help"] }
 clap-verbosity-flag = { version = "3.0.2", default-features = false, features = ["tracing"] }
 futures = "0.3.31"
