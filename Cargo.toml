@@ -9,7 +9,7 @@ description = "synchronize notmuch databases"
 [dependencies]
 camino = { version = "1.2.1", features = ["serde1"] }
 clap = { version = "4.5.40", features = ["color", "derive", "suggestions", "wrap_help"] }
-clap-verbosity-flag = { version = "3.0.2", default-features = false, features = ["tracing"] }
+clap-verbosity-flag = { version = "3.0.4", default-features = false, features = ["tracing"] }
 futures = "0.3.31"
 human-panic = "2.0.3"
 miette = { version = "7.5.0", features = ["fancy"] }
